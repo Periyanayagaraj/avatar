@@ -11,7 +11,7 @@ document.body.appendChild(renderer.domElement);
 camera.position.set(0, 1.5, 1.5);
 
 // Adding Directional Light
-const directionalLight = new THREE.DirectionalLight(0xFFFFFF,2); // Color: FFFFFF, Intensity: 1
+const directionalLight = new THREE.DirectionalLight(0xFFFFFF,3); // Color: FFFFFF, Intensity: 1
 directionalLight.position.set(-7.11,4.57, 93.91); // Position: x=-7.11, y=59.03, z=51.67
 
 // Shadow settings
@@ -33,7 +33,7 @@ scene.add(directionalLight);
 let model, head;
 const loader = new GLTFLoader();
 loader.load(
-    '3d/meee.glb',
+    '3d/harry.glb',
     (gltf) => {
         model = gltf.scene;
         scene.add(model);
